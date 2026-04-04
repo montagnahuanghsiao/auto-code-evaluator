@@ -1,0 +1,15 @@
+# PyCharm 產生設定
+.idea/
+
+# Python 環境
+.venv/
+__pycache__/
+*.pyc
+
+# 執行時產生的暫存檔 (不應上傳)
+data.txt
+read.txt
+
+# 排除 transfer 內的測試檔，只留下結構
+transfer/*
+!transfer/.gitkeep
