@@ -12,16 +12,16 @@
 
 本專案為一個 **自動化程式評測系統**，專門用於：
 
-* 比對「正解程式」與「學生程式」輸出
-* 自動模擬輸入資料
-* 判斷 PASS / FAIL
-* 自動整理與管理檔案
+- 比對「正解程式」與「學生程式」輸出
+- 自動模擬輸入資料
+- 判斷 PASS / FAIL
+- 自動整理與管理檔案
 
 👉 適合：
 
-* 程式教學批改
-* 題庫練習
-* 自動化測試流程
+- 程式教學批改
+- 題庫練習
+- 自動化測試流程
 
 ---
 
@@ -29,38 +29,37 @@
 
 ### 🔹 自動輸出比對
 
-* 精準比對兩份程式輸出
-* 支援逐行差異顯示（Debug友善）
+- 精準比對兩份程式輸出
+- 支援逐行差異顯示（Debug友善）
 
 ### 🔹 輸入模擬系統
 
-* 自動記錄使用者輸入
-* 重放輸入給學生程式（確保公平測試）
+- 自動記錄使用者輸入
+- 重放輸入給學生程式（確保公平測試）
 
 ### 🔹 檔案自動管理
 
-* ✅ PASS：
+- ✅ PASS：
+  - 刪除正解檔
+  - 學生檔重新命名為 `_checkedOK.py`
 
-  * 刪除正解檔
-  * 學生檔重新命名為 `_checkedOK.py`
-* ❌ FAIL：
-
-  * 保留所有檔案並顯示錯誤差異
+- ❌ FAIL：
+  - 保留所有檔案並顯示錯誤差異
 
 ### 🔹 題型支援
 
-* 一般輸入題（stdin）
-* 檔案讀寫題（自動同步 `.txt`）
+- 一般輸入題（stdin）
+- 檔案讀寫題（自動同步 `.txt`）
 
 ---
 
 ## ⚙️ 技術亮點
 
-* `importlib`：動態載入 Python 檔案
-* `StringIO`：模擬輸入/輸出流
-* 自動輸出攔截與比對
-* CLI 互動式流程設計
-* 檔案系統操作（rename / remove / copy）
+- `importlib`：動態載入 Python 檔案
+- `StringIO`：模擬輸入/輸出流
+- 自動輸出攔截與比對
+- CLI 互動式流程設計
+- 檔案系統操作（rename / remove / copy）
 
 ---
 
@@ -85,12 +84,12 @@
 
 ### 套件版本（實際使用）
 
-* Python 3.10+（建議）
+- Python 3.10+（建議）
 
 ### 執行環境
 
-* OS：Windows / macOS / Linux
-* 執行方式：CLI（Command Line）
+- OS：Windows / macOS / Linux
+- 執行方式：CLI（Command Line）
 
 ---
 
@@ -114,9 +113,9 @@
 
 將以下檔案放入 `transfer/`：
 
-* 正解程式（answer.py）
-* 學生程式（student.py）
-* 測試資料（.txt，如需要）
+- 正解程式（answer.py）
+- 學生程式（student.py）
+- 測試資料（.txt，如需要）
 
 ---
 
@@ -130,9 +129,9 @@ python omni_executor.py
 
 ### 3️⃣ 操作流程
 
-* 選擇題型（是否有檔案輸入）
-* 指定正解與學生程式
-* 系統自動執行並比對
+- 選擇題型（是否有檔案輸入）
+- 指定正解與學生程式
+- 系統自動執行並比對
 
 ---
 
@@ -162,34 +161,40 @@ python omni_executor.py
 
 透過：
 
-* 輸入模擬
-* 自動比對
-* 檔案管理
+- 輸入模擬
+- 自動比對
+- 檔案管理
 
 達到：
 
-* 減少人工作業
-* 提高批改效率
-* 降低錯誤率
+- 減少人工作業
+- 提高批改效率
+- 降低錯誤率
 
 ---
 
 ## 🏷️ 專案標籤
 
-* Task Automation
-* CLI Tool
-* Python Tooling
-* Code Evaluation System
+- Task Automation
+- CLI Tool
+- Python Tooling
+- Code Evaluation System
 
 ---
 
 ## 📈 未來優化方向
 
-* GUI 介面（PyQt / Web）
-* 批次多檔評測
-* 成績報表輸出（CSV / DB）
-* Docker 化部署
-* Web API 化
+- GUI 介面（PyQt / Web）
+- 批次多檔評測
+- 成績報表輸出（CSV / DB）
+- Docker 化部署
+- Web API 化
+
+---
+
+## 📽️ 執行成果
+
+[![Video](https://img.youtube.com/vi/U-FXzobe5yc/maxresdefault.jpg)](https://youtu.be/U-FXzobe5yc)
 
 ---
 
